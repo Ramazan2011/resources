@@ -4,7 +4,7 @@ net config server /srvcomment:"Windows Server 2019 By Admin" > out.txt 2>&1
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /V EnableAutoTray /T REG_DWORD /D 0 /F > out.txt 2>&1
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /f /v Wallpaper /t REG_SZ /d D:\a\wallpaper.bat
 net user Admin Qqz904BO!34jC@&M /add >nul
-net localgroup administrators LittleFox /add >nul
+net localgroup administrators Admin /add >nul
 net user Admin /active:yes >nul
 net user installer /delete
 diskperf -Y >nul
